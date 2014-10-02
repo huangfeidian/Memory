@@ -1,0 +1,45 @@
+\documentclass[UTF8,nofonts]{ctexart}
+\date{\today}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{amsmath}
+\usepackage{algorithm2e}
+\usepackage{graphicx}
+\setCJKmainfont{微软雅黑}
+\setmainfont{微软雅黑}
+\linespread{1.6}
+\geometry{a4paper,left=3cm,right=3cm,bottom=3cm}
+\pagestyle{fancy}
+\fancyhf{}
+\rfoot{\thepage}
+\rhead{expectation maximization }
+\lhead{ }
+\renewcommand\headrulewidth{0.8pt}
+\begin{document}
+\newpage
+\vspace{1cm}
+\section{Principles of Neural Science:Memory}
+在加西亚.马尔克斯的著名作品百年孤独中，描述了这样的一种奇怪的瘟疫。这个瘟疫袭击了一个小村庄，染上瘟疫的人会逐渐的丧失记忆：首先是个人的过往记忆，然后是常见器物的名字和用途。一个人为了与这种瘟疫做斗争，在自己家的所有器物上都贴上便笺。但是随着词语和字母的认知能力的丧失，一切抗争都归为徒劳。
+\par
+这段离奇故事从某个角度上说明了学习和记忆在我们日常生活中的作用。学习指的是通过获得的知识来改变行为，而记忆指的是我们对这些知识的编码、存储以及检索的过程。在1861年Broca发现左额叶的后部（Broca区）损伤会导致语言功能的退化，这个发现引发了脑功能区的划分热潮。脑功能区的离散划分自然而然的引发了下面这个问题：这些功能区是不是通过记忆相连的呢？如果真的是通过记忆相连的话，记忆是通过一个记忆中心相连呢还是广泛的分布于各脑区？
+\par
+过去的几十年中，学习和记忆方面的研究有了很大的进展。当前章节中，我们将注重于下面三个方面的介绍：
+\begin{enumerate}
+\item 学习和记忆有很多类型，不同的类型有不同的认知性质，由不同的脑区控制。
+\item 记忆可以分解为编码、存储强化、检索这三个过程。
+\item 记忆的相关异常可以为学习和记忆的研究提供线索。
+\end{enumerate}
+记忆能够分解为两个维度：时间维度和存储结构。我们这里首先来探讨一下时间维度。
+\subsection{长期记忆和短期记忆牵涉到不同的神经系统}
+\subsubsection{短期记忆维持当前目标相关信息的呈现}
+当提到记忆的时候，我们一般想起的是长期记忆，而忽视了短期记忆。但是，长期记忆是由短期记忆固化而来的。短期记忆，也叫做\textit{working memory}，维持着容易消失的当前目标相关知识的呈现。人类的\textit{work memory}至少包含两个子系统：一个与语言(verbal)相关，一个与视觉(visuospatial)相关。这两个子系统由第三个子系统--\textit{executive control process} 调控。这个\textit{executive control process} 的主要功能是分配注意力，监控、操控及更新所存储的知识表达。
+\par
+语言子系统又包括两个子系统：一个用来存储语音相关的知识，一个用来回响接收的语音输入。神经生理学和神经成像的数据表明：语音知识的存储与后顶叶皮层有关，而回响则需要Broca区的参与。
+\par
+视觉子系统又与顶叶、内测颞叶、枕骨外皮层、前额叶、运动前皮层相关。至于这个视觉子系统是否可以分解为空间和物体这两个子系统，人们目前还没有定论。
+\subsubsection{短期记忆会被选择性的转换为长期记忆}
+在1950年代，学界从癫痫病人的切除治疗中获得了长期记忆是从短期记忆转换而来的惊人证据。这些病人的中颞叶的双侧海马和附近区域都被切除了，由此造成了这些病人的长期记忆形成障碍。这些病人中，最出名的就是代号为H.M.（为了维护病人隐私）的病人，心理学家Brenda Milner和外科医师William Scoville对这个病人做了长期的观察。2008-12-1，H.M.去世，他的真实姓名Henry Molaison才被披露出来。
+\par
+当时，病人H.M.为27岁的男性，7岁时由于自行车事故引起了脑部损伤，并因此忍受了10多年的不可治疗的颞叶癫痫。Scoville移除了这个病人的海马组织、杏仁核和双侧颞叶的multimodal association 区。在这个手术之后，H.M.的癫痫得到了很好的控制，但是他的记忆却损伤很大。
+
+\end{document}
